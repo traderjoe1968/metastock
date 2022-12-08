@@ -25,7 +25,8 @@ dependencies = [
 [project.optional-dependencies]
 test = [
   "pytest",
-  "pytest-cov[all]"
+  "pytest-cov[all]",
+  "build"
 ]
 
 [project.urls]
