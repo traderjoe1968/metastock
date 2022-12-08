@@ -371,7 +371,7 @@ class MSDataFrame:
 
 
 if __name__ == "__main__":
-    import metastock as ms
+    import src as ms
 
     rootPath = r"Z:\Data\Futures"
     d = []
