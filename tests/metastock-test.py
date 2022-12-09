@@ -1,12 +1,10 @@
 import os
 import metastock as ms
 
-rootPath = r"Z:\Data\Futures"
+rootPath = r"D:\Trading\Data\Futures"
 
 if __name__ == "__main__":
-    import src as ms
 
-    
     d = []
     classPath = os.path.join(rootPath, "Continuous Contracts")
     for root, dirs, files in os.walk(classPath):
