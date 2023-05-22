@@ -351,7 +351,7 @@ class MSDataFrame:
         data = [(x['date'],x["open"],x["high"],x["low"],x["close"],int(x["volume"]),int(x["oi"])) for x in msdata]
         df = DataFrame(data, columns=["Datetime", "Open", "High", "Low", "Close", "Volume", "OI"])
         df['Datetime'] = pd.to_datetime(df['Datetime'])
-        df.set_index("Datetime", inplace=True, verify_integrity=False)
+        # df.set_index("Datetime", inplace=True, verify_integrity=False)
         df.name = msdata.name
         df.symbol = msdata.symbol
         return df
